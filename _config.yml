@@ -5,6 +5,6 @@ request:
 
 # 要抓取的 issues 配置
 issues:
-  repo: thun888/issues-api
+  repo: thun888/friends
   state: open
   label: active
