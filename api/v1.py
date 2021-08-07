@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # author: https://github.com/Zfour
 def github_json(owner, repo, branch):
-    source_url = 'https://raw.githubusercontent.com/' + owner + '/' + repo + '/' + branch + '/generator/output/v1/data.json'
+    source_url = 'https://cdn.jsdelivr.net/gh/' + owner + '/' + repo + '@' + branch + '/generator/output/v1/data.json'
     req = requests.get(source_url)
     content = []
     if req.content:
