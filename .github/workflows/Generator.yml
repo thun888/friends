@@ -28,6 +28,7 @@ jobs:
         git config --global user.name github-actions
         git add .
         git commit -m "Generate Json" -a
+        curl https://purge.jsdelivr.net/gh/thun888/friends@main/generator/output/v1/data.json
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
